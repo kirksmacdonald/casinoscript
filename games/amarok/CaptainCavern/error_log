@@ -1,0 +1,1 @@
+[11-Jun-2014 05:36:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sapph755/public_html/crystal-citadel.com/games/amarok/core/engine.php:309) in /home/sapph755/public_html/crystal-citadel.com/games/amarok/CaptainCavern/index.php on line 9

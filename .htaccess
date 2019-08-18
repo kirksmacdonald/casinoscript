@@ -1,0 +1,18 @@
+RewriteEngine On
+AddDefaultCharset windows-1251
+AddCharset windows-1251 *
+
+#Выключить отображение всех ошибок
+
+
+
+#Если установлен язык
+RewriteRule ^([a-z]{2})/(/?)+$ ?lang=$1 [L]
+RewriteRule ^([a-z]{2})/(.*)/(.*)(/?)+$ ?lang=$1&ppage=$2&mode=$3 [L]
+RewriteRule ^([a-z]{2})/(.*)(/?)+$ ?lang=$1&ppage=$2 [L]
+
+RewriteRule ^news/(.*)(/?)+$ ?news=$1&ppage=news&lang=ru [L]
+RewriteRule ^([a-z]{2})/messages/(.*)/(.*)(/?)+$ ?lang=$1&ppage=messages&id=$3&action=$2 [L]
+RewriteRule ^bonus$ /ru/bonus [L]
+RewriteRule ^user$  /ru/games [L]
+RewriteRule ^lobby/$  /ru/games [L]
